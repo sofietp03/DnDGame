@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DnDGame", "DnDGame\DnDGame.csproj", "{FA50CFDC-6AF5-4444-A9A5-FE4077B83CC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA50CFDC-6AF5-4444-A9A5-FE4077B83CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA50CFDC-6AF5-4444-A9A5-FE4077B83CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA50CFDC-6AF5-4444-A9A5-FE4077B83CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA50CFDC-6AF5-4444-A9A5-FE4077B83CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A0AB5F5-5C96-4EE4-9B49-D3465AE58589}
+	EndGlobalSection
+EndGlobal
