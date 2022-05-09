@@ -10,7 +10,7 @@ namespace DnDGame
     {
 
         Skills skills = new Skills();
-        Character Character = new Character();
+        Character character = new Character();
 
 
 
@@ -18,42 +18,43 @@ namespace DnDGame
         {
             while (true)
             {
+                
                 Menu();
+                
             }
        
 
 
 
         }
-
+       
         public void Menu()
         {
-            
+       
             Console.WriteLine("press 1 for roll for skills");
             Console.WriteLine("press 2 for create character");
-
+            
 
             switch (Console.ReadKey(true).Key)
             {
 
                 case ConsoleKey.D1:
                     Console.WriteLine("");
-                    RollSkills();
+                    
                     ShowSkills();
+                    character.Skills = skills;
                     pickCharacterType();
-
+                    ShowCharacter();
+                    
                     break;
 
-                    case ConsoleKey.D2:
-               
-                 
-
-                        break;
+                    
 
             }
-
+          
 
         }
+       
         public int RollSkills()
         {
             Random random = new Random();
@@ -116,20 +117,36 @@ namespace DnDGame
             {
                 Console.WriteLine( (int) characterType + " " + characterType.ToString());
             }           
-            Character.Characters = (Characters)(int)Console.ReadKey().Key - 48;
+            character.Characters = (Characters)(int)Console.ReadKey().Key - 48;
 
-            Console.WriteLine(Character.Characters);
+            Console.WriteLine(character.Characters);
 
 
-            while (Character.Name == null || Character.Name == "")
+            while (character.Name == null || character.Name == "")
             {
                 Console.Write("Pick a name: ");
-                Character.Name = Console.ReadLine();
+                character.Name = Console.ReadLine();
 
 
             }
 
             
+
+        }
+
+        public void ShowCharacter()
+        {
+            Console.WriteLine("------Character-----");
+            Console.WriteLine($"name: { character.Name}");
+            Console.WriteLine($"role: {character.Characters}");
+            Console.WriteLine($"Strength: {character.Skills.Strength}");
+            Console.WriteLine($"Intelligence:{character.Skills.Intelligence}");
+            Console.WriteLine($"Wisdom {character.Skills.Wisdom}");
+            Console.WriteLine($"Dexterity: {character.Skills.Dexterity}");
+            Console.WriteLine($"Constitution: {character.Skills.Constitution}");
+            Console.WriteLine($"Charisma: {character.Skills.Charisma}");
+
+
 
         }
 
